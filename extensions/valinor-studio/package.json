@@ -1,0 +1,153 @@
+{
+  "name": "valinor-studio",
+  "displayName": "Valinor Studio",
+  "description": "Skeleton extension for the Valinor Studio IDE",
+  "version": "0.0.1",
+  "publisher": "valinor",
+  "engines": {
+    "vscode": "^1.52.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onCommand:valinor.importRFP",
+    "onCommand:valinor.selectModel",
+    "onCommand:valinor.generateDiff",
+    "onCommand:valinor.inlineRegenerate",
+    "onCommand:valinor.suggestionHistory",
+    "onCommand:valinor.acceptReject",
+    "onCommand:valinor.complianceChecker",
+    "onCommand:valinor.pricingValidation",
+    "onCommand:valinor.snippetManager",
+    "onCommand:valinor.chatPane",
+    "onCommand:valinor.documentInsertion",
+    "onCommand:valinor.keyboardShortcuts",
+    "onCommand:valinor.comments",
+    "onCommand:valinor.versionHistory",
+    "onCommand:valinor.telemetryDashboard",
+    "onCommand:valinor.awardAnalytics",
+    "onCommand:valinor.bidDashboard",
+    "onCommand:valinor.multiAgentChat",
+    "onCommand:valinor.businessMatching",
+    "onCommand:valinor.indexMemory",
+    "onCommand:valinor.curlBuilder",
+    "onCommand:valinor.proposalPreview",
+    "onCommand:valinor.attachmentSigning",
+    "onCommand:valinor.contractChat",
+    "onCommand:valinor.cursorStyleChat"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "valinor.importRFP",
+        "title": "Valinor: importRFP"
+      },
+      {
+        "command": "valinor.selectModel",
+        "title": "Valinor: selectModel"
+      },
+      {
+        "command": "valinor.generateDiff",
+        "title": "Valinor: generateDiff"
+      },
+      {
+        "command": "valinor.inlineRegenerate",
+        "title": "Valinor: inlineRegenerate"
+      },
+      {
+        "command": "valinor.suggestionHistory",
+        "title": "Valinor: suggestionHistory"
+      },
+      {
+        "command": "valinor.acceptReject",
+        "title": "Valinor: acceptReject"
+      },
+      {
+        "command": "valinor.complianceChecker",
+        "title": "Valinor: complianceChecker"
+      },
+      {
+        "command": "valinor.pricingValidation",
+        "title": "Valinor: pricingValidation"
+      },
+      {
+        "command": "valinor.snippetManager",
+        "title": "Valinor: snippetManager"
+      },
+      {
+        "command": "valinor.chatPane",
+        "title": "Valinor: chatPane"
+      },
+      {
+        "command": "valinor.documentInsertion",
+        "title": "Valinor: documentInsertion"
+      },
+      {
+        "command": "valinor.keyboardShortcuts",
+        "title": "Valinor: keyboardShortcuts"
+      },
+      {
+        "command": "valinor.comments",
+        "title": "Valinor: comments"
+      },
+      {
+        "command": "valinor.versionHistory",
+        "title": "Valinor: versionHistory"
+      },
+      {
+        "command": "valinor.telemetryDashboard",
+        "title": "Valinor: telemetryDashboard"
+      },
+      {
+        "command": "valinor.awardAnalytics",
+        "title": "Valinor: awardAnalytics"
+      },
+      {
+        "command": "valinor.bidDashboard",
+        "title": "Valinor: bidDashboard"
+      },
+      {
+        "command": "valinor.multiAgentChat",
+        "title": "Valinor: multiAgentChat"
+      },
+      {
+        "command": "valinor.businessMatching",
+        "title": "Valinor: businessMatching"
+      },
+      {
+        "command": "valinor.indexMemory",
+        "title": "Valinor: indexMemory"
+      },
+      {
+        "command": "valinor.curlBuilder",
+        "title": "Valinor: curlBuilder"
+      },
+      {
+        "command": "valinor.proposalPreview",
+        "title": "Valinor: proposalPreview"
+      },
+      {
+        "command": "valinor.attachmentSigning",
+        "title": "Valinor: attachmentSigning"
+      },
+      {
+        "command": "valinor.contractChat",
+        "title": "Valinor: contractChat"
+      },
+      {
+        "command": "valinor.cursorStyleChat",
+        "title": "Valinor: cursorStyleChat"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "prepare": "npm run compile"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

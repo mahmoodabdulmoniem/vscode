@@ -1,0 +1,55 @@
+import * as vscode from 'vscode';
+
+import * as importRFP from './importRFP';
+import * as selectModel from './selectModel';
+import * as generateDiff from './generateDiff';
+import * as inlineRegenerate from './inlineRegenerate';
+import * as suggestionHistory from './suggestionHistory';
+import * as acceptReject from './acceptReject';
+import * as complianceChecker from './complianceChecker';
+import * as pricingValidation from './pricingValidation';
+import * as snippetManager from './snippetManager';
+import * as chatPane from './chatPane';
+import * as documentInsertion from './documentInsertion';
+import * as keyboardShortcuts from './keyboardShortcuts';
+import * as comments from './comments';
+import * as versionHistory from './versionHistory';
+import * as telemetryDashboard from './telemetryDashboard';
+import * as awardAnalytics from './awardAnalytics';
+import * as bidDashboard from './bidDashboard';
+import * as multiAgentChat from './multiAgentChat';
+import * as businessMatching from './businessMatching';
+import * as indexMemory from './indexMemory';
+import * as curlBuilder from './curlBuilder';
+import * as proposalPreview from './proposalPreview';
+import * as attachmentSigning from './attachmentSigning';
+import * as contractChat from './contractChat';
+import * as cursorStyleChat from './cursorStyleChat';
+
+export function registerAll(context: vscode.ExtensionContext) {
+    importRFP.register(context);
+    selectModel.register(context);
+    generateDiff.register(context);
+    inlineRegenerate.register(context);
+    suggestionHistory.register(context);
+    acceptReject.register(context);
+    complianceChecker.register(context);
+    pricingValidation.register(context);
+    snippetManager.register(context);
+    chatPane.register(context);
+    documentInsertion.register(context);
+    keyboardShortcuts.register(context);
+    comments.register(context);
+    versionHistory.register(context);
+    telemetryDashboard.register(context);
+    awardAnalytics.register(context);
+    bidDashboard.register(context);
+    multiAgentChat.register(context);
+    businessMatching.register(context);
+    indexMemory.register(context);
+    curlBuilder.register(context);
+    proposalPreview.register(context);
+    attachmentSigning.register(context);
+    contractChat.register(context);
+    cursorStyleChat.register(context);
+}
